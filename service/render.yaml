@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: landing-page-generator
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: SHOPIFY_STORE_URL
+        sync: false
+      - key: SHOPIFY_ACCESS_TOKEN
+        sync: false
+      - key: NODE_ENV
+        value: production

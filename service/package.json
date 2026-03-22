@@ -1,0 +1,20 @@
+{
+  "name": "landing-page-generator",
+  "version": "1.0.0",
+  "description": "Genera landing page Shopify da link AliExpress usando OpenAI",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@shopify/shopify-api": "^11.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "openai": "^4.60.0"
+  }
+}
